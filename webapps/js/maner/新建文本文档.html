@@ -1,0 +1,39 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<div id='abc' style='position:fixed;left:100px;top:100px;width:100px;height:100px;background:#ff0000'></div>
+	</body>
+	<script>
+	var x,y,l,t,nx,ny,nl,nt
+		var abc = document.getElementById('abc')
+		abc.isDown = false
+		abc.addEventListener('mousedown',function(e){
+			x=e.clientX;
+			y=e.clientY;
+			l = this.offsetLeft;
+			t= this.offsetTop;
+			this.isDown = true;
+	})
+
+
+	abc.addEventListener('mousemove',function(e){
+			if (this.isDown == false) {
+				return;
+			}
+			nx = e.clientX;
+			ny = e.clientY;
+			nl = nx - (x - l);
+			nt = ny - (y - t);
+			this.style.left = nl + 'px';
+			this.style.top = nt + 'px';
+	})
+
+
+
+	abc.addEventListener('mouseup',function(){
+			this.isDown = false;
+	})
+
+	</script>
+</html>

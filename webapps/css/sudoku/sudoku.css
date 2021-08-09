@@ -1,0 +1,35 @@
+.bigk{
+	width:906px;
+	height:906px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	float:left;
+	background:url('../../img/sudoku_bkgrd.jpg') no-repeat;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	position:center;
+	margin:auto
+	}
+
+.midk{
+	width:300px;
+	height:300px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	float:left;
+	background-color:rgba(255,255,255,0);
+}
+
+.smak{
+	width:100px;
+	height:100px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	text-align:center;
+	font-size:50px;
+	float:left;
+	background-color:rgba(255,255,255,0);
+}

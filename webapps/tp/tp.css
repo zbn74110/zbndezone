@@ -1,0 +1,30 @@
+html body {
+	padding: 0;
+	margin: 0;
+}
+#ground {
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+#buttonBox {
+	width: 640px;
+	height: 138px;
+	background-color: #ffffff;
+	border: solid 1px #cccccc;
+	position: fixed;
+	bottom: 0px;
+}
+#buttonBox button {
+	font-size:28px;
+	width: 286px;
+	height: 122px;
+	border-radius: 4px;
+	margin-top: 8px
+}
+
+.button {
+	background-color: #FFFFFF;
+	border: solid 2px #008cff;
+	color: #008cff;
+	margin-left: 20px
+}

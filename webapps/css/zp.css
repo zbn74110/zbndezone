@@ -1,0 +1,14 @@
+.cardpst{
+	position:fixed;
+	width:100px;
+	height:160px;
+	border:1px solid black;
+	background:white;
+	float:left;
+}
+.u{
+	top:50px;
+}
+.d{
+	top:260px;
+}

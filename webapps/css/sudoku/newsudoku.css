@@ -1,0 +1,143 @@
+html,body {
+	padding: 0;
+	margin: 0;
+	}
+	
+div {
+	-khtml-user-select: none;
+	user-select: none;
+	}
+	
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	}
+	
+@keyframes bounceInDown {
+	from,60%,75%,90%,to {
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+		}
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -3000px, 0);
+		}
+	60% {
+		opacity: 1;
+		transform: translate3d(0, 25px, 0);
+		}
+	75% {
+		transform: translate3d(0, -10px, 0);
+		}
+	90% {
+		transform: translate3d(0, 5px, 0);
+		}
+	to {
+		transform: none;
+		}
+	}
+
+.bounceInDown {
+	animation-name: bounceInDown;
+}
+.bigk{
+	position:fixed;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	float:left;
+	background:rgba(0,0,0,0);
+	}
+
+.bk{
+	background:url(../../img/sudoku_bkgrd.jpg) 0% 0% / cover no-repeat;
+	opacity:0.5;
+	z-index:-1;
+	position:fixed;
+}
+
+.midk{
+	box-sizing:border-box;
+	width:33.33333333333333333%;
+	height:33.33333333333333333%;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	float:left;
+	background-color:rgba(255,255,255,0);
+}
+
+.smak{
+	width:33.33333333333333333%;
+	height:33.33333333333333333%;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	text-align:center;
+	font-size:50px;
+	float:left;
+	background-color:rgba(255,255,255,0);
+	background-size:cover;
+}
+
+.toptip{
+	box-sizing:border-box;
+	font-size:50px;
+	top:900px;
+	/* margin-left:20px; */
+}
+
+.tipp{
+	width:100px;
+	height:100px;
+	margin-left:50px;
+	border-style:solid 1px black;
+	text-align:center;
+	float:left;
+}
+
+.tipt{
+	height:100px;
+	box-sizing:border-box;
+	font-size:20px;
+	line-height:100px;
+}
+
+#point{
+	position:absolute;
+	left:50%;
+	top:50%;
+}
+
+#alt{
+	box-sizing:border-box;
+	background-color:#22b9ff;
+	color:#ffffff;
+	z-index:9999999;
+	margin:0 auto;
+	border-radius:8px;
+	font-size:20px;
+	text-align:center;
+	line-height:auto;
+	padding:10px 30px;
+	position:absolute;
+	width:280px;
+	height:100px;
+	left:-140px;
+	top:-60px;
+}
+
+#rld{
+	box-sizing:border-box;
+	width:80px;
+	height:30px;
+	background:#ffb922;
+	font-size:16px;
+	text-align:center;
+	line-height:auto;
+	padding:5px;
+	border-radius:8px;
+	position:absolute;
+	left:100px;
+	margin-top:5px
+}
+

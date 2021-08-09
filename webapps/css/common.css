@@ -1,0 +1,77 @@
+body, html,div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body {
+font-size:16px;
+color:#666;
+font-family: Microsoft YaHei,SimSun;
+background: #fff;
+}
+textarea,
+input,
+button,
+select {
+outline: none;
+}
+li {
+list-style: none;
+}
+img {
+border: 0;
+}
+a{
+color:#666;
+text-decoration: none;
+}
+
+a:hover {
+color:#666;
+text-decoration: none;
+}
+/内容超出隐藏/
+.txt_overflow{
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+/左浮动/
+.fl {
+float: left;
+}
+/右浮动/
+.fr {
+float: right;
+}
+/清除浮动/
+.clearfix:after {
+content: “.”;
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+/元素隐藏/
+.txt_none{
+display: none;
+}
+/元素后添加横线/
+.after_line:after{
+content: ‘’;
+position: absolute;/定位背景横线的位置/
+top:50%;
+left:50%;
+background:rgb(255,125,0,0.8); /背景横线颜色/
+width:65px; /单侧横线的长度/
+height:8px;
+border-radius:5px;
+}
+/边框圆角/
+.b_r{
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+}
